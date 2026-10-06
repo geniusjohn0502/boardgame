@@ -138,7 +138,7 @@ header{
 .flow-item b{font-family:"Noto Serif TC",serif;font-weight:400;font-size:2rem;color:var(--clay);line-height:1}
 .flow-item h3{margin-bottom:6px}
 .flow-item p{font-size:.93rem;color:var(--ink-2)}
-.bank{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:2px;padding:6px 22px}
+.bank{margin-top:0;background:var(--card);border:1px solid var(--line);border-radius:2px;padding:6px 22px}
 .bank-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;font-size:.92rem}
 .bank-row+.bank-row{border-top:1px solid var(--line-soft)}
 .bank-row .k{color:var(--ink-3);letter-spacing:.08em;font-size:.82rem;flex:none}
@@ -273,7 +273,7 @@ footer.site p{max-width:46em}
     <div class="stat"><b>2 場</b><span>10/18（日）<br>10/23（五）</span></div>
     <div class="stat"><b>2 小時</b><span>14:00–16:00</span></div>
     <div class="stat"><b>$300</b><span>場地費</span></div>
-    <div class="stat"><b>台北</b><span>捷運站附近<br>10/15 前通知地點</span></div>
+    <div class="stat"><b>台北</b><span>捷運站附近<br>活動前三天通知地點</span></div>
   </div>
 </div>
 
@@ -340,21 +340,14 @@ footer.site p{max-width:46em}
 <section class="sec-alt" id="signup">
   <div class="wrap">
     <div class="eyebrow">Sign up</div>
-    <h2>報名三步驟</h2>
+    <h2>報名方式</h2>
     <div class="rule"></div>
-    <p class="lede">匯款、填表、收到確認信，就完成了。</p>
+    <p class="lede">填寫下方報名表，並匯款場地費 300 元，就完成報名。</p>
 
-    <div class="flow">
-      <div class="flow-item"><b>1</b><div>
-        <h3>匯款場地費 300 元</h3>
-        <div class="bank">
-          <div class="bank-row"><span class="k">銀行</span><span class="v">048 王道銀行</span></div>
-          <div class="bank-row"><span class="k">帳號</span><span class="v"><span class="acct" id="acct">01000046269788</span><button type="button" class="copy" id="copyBtn">複製</button></span></div>
-          <div class="bank-row"><span class="k">戶名</span><span class="v">林暉勝</span></div>
-        </div>
-      </div></div>
-      <div class="flow-item"><b>2</b><div><h3>填寫下方報名表</h3><p>記得附上你的匯款帳號末五碼，方便核對。</p></div></div>
-      <div class="flow-item"><b>3</b><div><h3>收到確認 Email</h3><p>我核對完匯款後會寄出確認信，收到就完成報名。</p></div></div>
+    <div class="bank">
+      <div class="bank-row"><span class="k">銀行</span><span class="v">048 王道銀行</span></div>
+      <div class="bank-row"><span class="k">帳號</span><span class="v"><span class="acct" id="acct">01000046269788</span><button type="button" class="copy" id="copyBtn">複製</button></span></div>
+      <div class="bank-row"><span class="k">戶名</span><span class="v">林暉勝</span></div>
     </div>
 
     <div class="form-shell">
@@ -367,7 +360,7 @@ footer.site p{max-width:46em}
 
         <div class="field" data-field="email">
           <label for="f-email">Email<span class="req">*</span></label>
-          <div class="hint">場地確認與報名確認都會寄到這裡</div>
+          <div class="hint">活動通知會寄到這裡</div>
           <input type="email" id="f-email" name="entry.1659933169" autocomplete="email" inputmode="email">
           <div class="err">請填寫正確的 Email</div>
         </div>
@@ -410,15 +403,15 @@ footer.site p{max-width:46em}
         <div class="submit-row">
           <button type="submit" class="btn" id="submitBtn">送出報名</button>
           <p class="send-fail" id="sendFail">送出失敗，請檢查網路後再試一次。</p>
-          <p class="fine">送出後 1–2 天內會收到確認 Email</p>
+          <p class="fine">活動開始前三天，會寄發 Email 通知</p>
         </div>
       </form>
 
       <div id="done">
         <div class="tick"></div>
-        <h3>報名資料已送出</h3>
-        <p>我核對完匯款後，會寄確認信到你的 Email。<br>收到確認信，就完成報名囉。</p>
-        <div class="done-line">確切地點最晚 10/15 前以 Email 通知<br>沒收到信的話，記得看一下垃圾郵件匣</div>
+        <h3>報名完成</h3>
+        <p>記得匯款場地費 300 元。<br>活動開始前三天，會寄發 Email 通知。</p>
+        <div class="done-line">確切地點會寫在通知信裡<br>沒收到信的話，記得看一下垃圾郵件匣</div>
       </div>
     </div>
 
@@ -454,7 +447,7 @@ footer.site p{max-width:46em}
 <footer class="site">
   <div class="wrap">
     <span class="brand">灰哥｜理財陪跑教練</span>
-    <p>《財富自由》桌遊為實體財務教育體驗活動，名額有限，額滿即止。確切場地最晚於 10/15 前以 Email 通知。</p>
+    <p>《財富自由》桌遊為實體財務教育體驗活動，名額有限，額滿即止。確切場地將於活動開始前三天以 Email 通知。</p>
     <p style="margin-top:12px">※ 本頁內容為個人理財觀念分享與活動說明，不構成任何投資建議，亦不涉及金融商品之銷售或推介。</p>
   </div>
 </footer>
