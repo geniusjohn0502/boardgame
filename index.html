@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>《財富自由》桌遊｜灰哥理財陪跑教練</title>
-<meta name="description" content="把人生的收入、支出、投資濃縮成一場遊戲。邊玩邊學會寫自己的財務報表，10/18 台北場次報名中。">
+<meta name="description" content="把人生的收入、支出、投資濃縮成一場遊戲。邊玩邊學會寫自己的財務報表，10/18 台北場次已額滿，可留下 Email 等下一場通知。">
 <meta property="og:title" content="《財富自由》桌遊｜報名">
 <meta property="og:description" content="讓被動收入大過每月支出，跳出朝九晚五圈。2 小時實體桌遊，場地費 $300。">
 <meta property="og:type" content="website">
@@ -246,7 +246,7 @@ footer.site p{max-width:46em}
 <header>
   <div class="nav">
     <div class="brand">灰哥<span>理財陪跑教練</span></div>
-    <a href="#signup" class="btn btn-sm">報名桌遊</a>
+    <a href="#signup" class="btn btn-sm">下一場通知我</a>
   </div>
 </header>
 
@@ -259,10 +259,10 @@ footer.site p{max-width:46em}
       <p>如果把收入、支出、投資通通濃縮成 1 個小時，你會怎麼玩？</p>
       <p>《財富自由》是一款模擬人生財務決策的桌遊。邊玩邊學會寫自己的財務報表，也順便看見那個你一再重複的財務習慣。</p>
       <div class="hero-cta">
-        <a href="#signup" class="btn">我要報名</a>
+        <a href="#signup" class="btn">下一場通知我</a>
         <a href="#play" class="btn btn-ghost">先看看怎麼玩</a>
       </div>
-      <div class="hero-note"><span>10/18（日）</span><i>／</i><span>14:00–16:00</span><i>／</i><span>額滿即止</span></div>
+      <div class="hero-note"><span>10/18（日）</span><i>／</i><span>14:00–16:00</span><i>／</i><span>本場已額滿</span></div>
     </div>
   </div>
 </section>
@@ -336,85 +336,42 @@ footer.site p{max-width:46em}
   </div>
 </section>
 
-<!-- ============ 報名流程 + 表單 ============ -->
+<!-- ============ 已額滿 + 下一場通知名單 ============ -->
 <section class="sec-alt" id="signup">
   <div class="wrap">
-    <div class="eyebrow">Sign up</div>
-    <h2>報名方式</h2>
+    <div class="eyebrow">Sold out</div>
+    <h2>本場已額滿，謝謝大家支持</h2>
     <div class="rule"></div>
-    <p class="lede">填寫下方報名表，並匯款場地費 300 元，就完成報名。</p>
-
-    <div class="bank">
-      <div class="bank-row"><span class="k">銀行</span><span class="v">048 王道銀行</span></div>
-      <div class="bank-row"><span class="k">帳號</span><span class="v"><span class="acct" id="acct">01000046269788</span><button type="button" class="copy" id="copyBtn">複製</button></span></div>
-      <div class="bank-row"><span class="k">戶名</span><span class="v">林暉勝</span></div>
-    </div>
+    <p class="lede">10/18（日）這一場的名額已經滿了。想參加下一場？留下 Email，開團時第一個通知你。</p>
 
     <div class="form-shell">
-      <form id="regForm" novalidate>
-        <div class="field" data-field="name">
-          <label for="f-name">姓名<span class="req">*</span></label>
-          <input type="text" id="f-name" name="entry.1660898343" autocomplete="name">
-          <div class="err">請填寫姓名</div>
+      <form id="waitForm" novalidate>
+        <div class="field" data-field="nick">
+          <label for="w-nick">怎麼稱呼你？</label>
+          <input type="text" id="w-nick" name="entry.1984231940" autocomplete="name" placeholder="選填">
         </div>
 
         <div class="field" data-field="email">
-          <label for="f-email">Email<span class="req">*</span></label>
-          <div class="hint">活動通知會寄到這裡</div>
-          <input type="email" id="f-email" name="entry.1659933169" autocomplete="email" inputmode="email">
+          <label for="w-email">Email<span class="req">*</span></label>
+          <div class="hint">下一場開團時，通知會寄到這裡</div>
+          <input type="email" id="w-email" name="entry.629300884" autocomplete="email" inputmode="email">
           <div class="err">請填寫正確的 Email</div>
         </div>
 
-        <div class="field" data-field="phone">
-          <label for="f-phone">手機號碼<span class="req">*</span></label>
-          <div class="hint">僅供備用聯繫</div>
-          <input type="tel" id="f-phone" name="entry.876611298" autocomplete="tel" inputmode="tel" placeholder="09xxxxxxxx">
-          <div class="err">請填寫手機號碼</div>
-        </div>
-
-        <div class="field" data-field="session">
-          <span class="label">參加場次<span class="req">*</span></span>
-          <div class="choices">
-            <label class="choice"><input type="radio" name="entry.1562994599" value="10/18（日）14:00–16:00" checked>10/18（日）14:00–16:00</label>
-          </div>
-          <div class="err">請選擇一個場次</div>
-        </div>
-
-        <div class="field" data-field="last5">
-          <label for="f-last5">匯款帳號末五碼<span class="req">*</span></label>
-          <div class="hint">方便核對匯款</div>
-          <input type="text" id="f-last5" name="entry.2091015364" inputmode="numeric" maxlength="5" placeholder="12345">
-          <div class="err">請填寫 5 位數字</div>
-        </div>
-
-        <div class="field" data-field="source">
-          <span class="label">從哪裡知道這個活動？</span>
-          <div class="choices row">
-            <label class="choice"><input type="radio" name="entry.927497078" value="Threads">Threads</label>
-            <label class="choice"><input type="radio" name="entry.927497078" value="IG">IG</label>
-            <label class="choice"><input type="radio" name="entry.927497078" value="朋友介紹">朋友介紹</label>
-          </div>
-          <div class="choices">
-            <label class="choice"><input type="radio" name="entry.927497078" value="__other_option__" id="srcOther">其他：<input type="text" class="other-text" id="srcOtherText"></label>
-          </div>
-        </div>
-
         <div class="submit-row">
-          <button type="submit" class="btn" id="submitBtn">送出報名</button>
+          <button type="submit" class="btn" id="waitBtn">下一場通知我</button>
           <p class="send-fail" id="sendFail">送出失敗，請檢查網路後再試一次。</p>
-          <p class="fine">活動開始前三天，會寄發 Email 通知</p>
+          <p class="fine">你的 Email 只會用來通知桌遊活動</p>
         </div>
       </form>
 
       <div id="done">
         <div class="tick"></div>
-        <h3>報名完成</h3>
-        <p>記得匯款場地費 300 元。<br>活動開始前三天，會寄發 Email 通知。</p>
-        <div class="done-line">活動地點：小樹屋 巒大杉 203<br>臺北市中山區民生東路二段 90 巷 4 號 2 樓（203 房）<br>沒收到信的話，記得看一下垃圾郵件匣</div>
+        <h3>收到了，謝謝你</h3>
+        <p>下一場《財富自由》桌遊開團時，<br>會寄 Email 通知你。</p>
+        <div class="done-line">沒收到信的話，記得看一下垃圾郵件匣</div>
       </div>
     </div>
-
-    <p class="refund"><b>退費規則</b>　活動日前 3 天（含）以前通知可全額退費，之後恕不退費。</p>
   </div>
 </section>
 
@@ -439,7 +396,7 @@ footer.site p{max-width:46em}
   <div class="wrap">
     <h2>先在遊戲裡，<br>把錢玩懂一次。</h2>
     <p>10/18（日）　14:00–16:00　場地費 $300<br>小樹屋 巒大杉 203｜臺北市中山區民生東路二段 90 巷 4 號 2 樓</p>
-    <a href="#signup" class="btn">我要報名</a>
+    <a href="#signup" class="btn">下一場通知我</a>
   </div>
 </section>
 
@@ -452,8 +409,8 @@ footer.site p{max-width:46em}
 </footer>
 
 <script>
-  // ── Google 表單送出設定 ──
-  var FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSd4imBWKFn-HhgzTNY-hudS-T9nwversCL2iBa5Vs-868Q3Cw/formResponse";
+  // ── 下一場通知名單：送進 Google 表單「《財富自由》桌遊｜下一場通知名單」 ──
+  var FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSdKAZ97BSDYd9wQrZQXuZ4Ky7VAHrixWvxvStKp-Jcft0LHGg/formResponse";
 
   // 送出成功時觸發：之後裝了追蹤碼，會在這裡記錄轉換
   function onSubmitted() {
@@ -461,62 +418,26 @@ footer.site p{max-width:46em}
     if (window.gtag) gtag('event', 'sign_up');
   }
 
-  // 複製帳號
-  document.getElementById('copyBtn').addEventListener('click', function () {
-    var btn = this, txt = document.getElementById('acct').textContent;
-    var ok = function () { btn.textContent = '已複製'; setTimeout(function () { btn.textContent = '複製'; }, 1800); };
-    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, function () {});
-    else { var t = document.createElement('textarea'); t.value = txt; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); ok(); } catch (e) {} t.remove(); }
-  });
-
-  // 「其他」：打字時自動勾選
-  var otherText = document.getElementById('srcOtherText');
-  otherText.addEventListener('input', function () { document.getElementById('srcOther').checked = true; });
-
-  // 末五碼只留數字
-  var last5 = document.getElementById('f-last5');
-  last5.addEventListener('input', function () { this.value = this.value.replace(/\D/g, '').slice(0, 5); });
-
-  // 驗證
-  var form = document.getElementById('regForm');
-  function setInvalid(key, bad) { form.querySelector('[data-field="' + key + '"]').classList.toggle('invalid', bad); return bad; }
+  var form = document.getElementById('waitForm');
+  var email = document.getElementById('w-email');
   function validate() {
-    var bad = false;
-    bad = setInvalid('name', !document.getElementById('f-name').value.trim()) || bad;
-    bad = setInvalid('email', !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById('f-email').value.trim())) || bad;
-    bad = setInvalid('phone', document.getElementById('f-phone').value.replace(/\D/g, '').length < 8) || bad;
-    bad = setInvalid('session', !form.querySelector('input[name="entry.1562994599"]:checked')) || bad;
-    bad = setInvalid('last5', !/^\d{5}$/.test(last5.value)) || bad;
+    var bad = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+    form.querySelector('[data-field="email"]').classList.toggle('invalid', bad);
     return !bad;
   }
-  form.addEventListener('input', function (e) {
-    var f = e.target.closest('.field');
-    if (f && f.classList.contains('invalid')) validate();
-  });
-  form.addEventListener('change', function (e) {
-    var f = e.target.closest('.field');
-    if (f && f.classList.contains('invalid')) validate();
+  email.addEventListener('input', function () {
+    if (this.closest('.field').classList.contains('invalid')) validate();
   });
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    if (!validate()) {
-      var first = form.querySelector('.field.invalid');
-      if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      return;
-    }
+    if (!validate()) { email.focus(); return; }
     var data = new URLSearchParams();
-    ['f-name', 'f-email', 'f-phone', 'f-last5'].forEach(function (id) {
+    ['w-nick', 'w-email'].forEach(function (id) {
       var el = document.getElementById(id); data.append(el.name, el.value.trim());
     });
-    data.append('entry.1562994599', form.querySelector('input[name="entry.1562994599"]:checked').value);
-    var src = form.querySelector('input[name="entry.927497078"]:checked');
-    if (src) {
-      data.append('entry.927497078', src.value);
-      if (src.value === '__other_option__') data.append('entry.927497078.other_option_response', otherText.value.trim());
-    }
 
-    var btn = document.getElementById('submitBtn');
+    var btn = document.getElementById('waitBtn');
     btn.disabled = true; btn.textContent = '送出中…';
     document.getElementById('sendFail').style.display = 'none';
 
@@ -528,7 +449,7 @@ footer.site p{max-width:46em}
         onSubmitted();
       })
       .catch(function () {
-        btn.disabled = false; btn.textContent = '送出報名';
+        btn.disabled = false; btn.textContent = '下一場通知我';
         document.getElementById('sendFail').style.display = 'block';
       });
   });
